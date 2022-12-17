@@ -30,7 +30,10 @@ async function resetServer() {
   try {
     console.log("Downloading main server file");
     await fs.remove("server.exe");
-    // Install server.exe
+    await download(
+      "https://github.com/nub31/twitch_youtube_chat_connector/releases/latest/download/server.exe",
+      "./"
+    );
   } catch (err) {
     console.error("Something went wrong the server file. ERROR:");
     throw err;
