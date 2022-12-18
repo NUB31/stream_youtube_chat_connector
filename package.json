@@ -1,5 +1,5 @@
 {
-  "name": "twitch_chat_connector",
+  "name": "youtube_chat_connector",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.ts",
