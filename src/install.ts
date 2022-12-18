@@ -31,7 +31,7 @@ async function resetServer() {
     console.log("Downloading main server file");
     await fs.remove("server.exe");
     await download(
-      "https://github.com/nub31/twitch_youtube_chat_connector/releases/latest/download/server.exe",
+      "https://github.com/nub31/stream_youtube_chat_connector/releases/latest/download/server.exe",
       "./"
     );
   } catch (err) {
