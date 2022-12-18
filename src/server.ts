@@ -106,8 +106,11 @@ async function main() {
     }
   });
 
-  const ok = await client.start();
-  if (!ok) {
-    console.warn("Could not connect. This is probably because of a problem .");
+  try {
+    await client.start();
+  } catch (err) {
+    console.warn(
+      "Could not connect. This is probably because of a problem with the username in settings.json."
+    );
   }
 }
